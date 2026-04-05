@@ -52,8 +52,26 @@ function Header() {
 }
 
 function Hero() {
+  const [isVisible, setIsVisible] = useState(false);
+  const heroRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.3 }
+    );
+
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="hero">
+    <section className="hero" ref={heroRef} data-visible={isVisible}>
       <div className="hero-bg">
         <img 
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmMEO3R7uW30UbkH3fPf1pZJvZpK8ZKtHru6qbLp91pSb8D5aTRIV1opVSGDDNz4z3YTcTppqFAuOsix9Q5NRhvD2XIbTG3jCbiaXtUjDVMO4Q7bIhA1tON16F3IpFTmEwZbCBRmCwX23YP_jf52v65c4cCyszpBASdrDOoISicG5UMvZrNewivj8TWdYxAJvIQfE097TVv-BsAGPgqg7nOIBxrgZLKPZQ832RrgvkpsbYzfluIJG1V7DOeJQxkHD-4I10P_qb9HJN" 

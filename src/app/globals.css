@@ -190,8 +190,18 @@ h1, h2, h3, h4, h5, h6, .font-headline {
   transition: filter 0.7s ease;
 }
 
-.hero:hover .hero-bg img {
-  filter: grayscale(0%);
+/* Mobile: apply effect when section is visible */
+@media (max-width: 767px) {
+  .hero[data-visible="true"] .hero-bg img {
+    filter: grayscale(0%);
+  }
+}
+
+/* Desktop: keep original hover behavior */
+@media (hover: hover) {
+  .hero:hover .hero-bg img {
+    filter: grayscale(0%);
+  }
 }
 
 .hero-gradient {
