@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RANGERS FITNESS | UNYIELDING PERFORMANCE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ff6e84",
+                        "on-error": "#490013",
+                        "tertiary": "#dba2ff",
+                        "error-container": "#a70138",
+                        "on-secondary-fixed-variant": "#912b3c",
+                        "secondary-fixed-dim": "#ffaeb4",
+                        "inverse-surface": "#f9f9f9",
+                        "primary": "#ff8e7d",
+                        "primary-container": "#ff7763",
+                        "surface-tint": "#ff8e7d",
+                        "tertiary-fixed-dim": "#c889f1",
+                        "outline-variant": "#484848",
+                        "primary-dim": "#eb0000",
+                        "on-secondary-fixed": "#6a0c22",
+                        "on-tertiary-container": "#47026f",
+                        "surface-container": "#191919",
+                        "on-secondary": "#570017",
+                        "on-tertiary": "#53157a",
+                        "surface": "#0e0e0e",
+                        "surface-bright": "#2c2c2c",
+                        "surface-container-highest": "#262626",
+                        "on-tertiary-fixed-variant": "#56197d",
+                        "on-tertiary-fixed": "#2a0044",
+                        "tertiary-dim": "#c384eb",
+                        "on-surface-variant": "#ababab",
+                        "surface-variant": "#262626",
+                        "secondary": "#fe7e8c",
+                        "on-error-container": "#ffb2b9",
+                        "surface-container-high": "#1f1f1f",
+                        "on-primary-fixed-variant": "#600000",
+                        "on-surface": "#ffffff",
+                        "on-primary": "#650000",
+                        "surface-dim": "#0e0e0e",
+                        "surface-container-lowest": "#000000",
+                        "on-primary-container": "#4f0000",
+                        "inverse-primary": "#c10100",
+                        "on-background": "#ffffff",
+                        "tertiary-fixed": "#d697ff",
+                        "outline": "#757575",
+                        "primary-fixed-dim": "#ff5b47",
+                        "tertiary-container": "#d191fa",
+                        "inverse-on-surface": "#555555",
+                        "secondary-container": "#842133",
+                        "error-dim": "#d73357",
+                        "on-primary-fixed": "#000000",
+                        "primary-fixed": "#ff7763",
+                        "secondary-fixed": "#ffc2c6",
+                        "secondary-dim": "#f47785",
+                        "surface-container-low": "#131313",
+                        "on-secondary-container": "#ffc0c4",
+                        "background": "#0e0e0e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #0e0e0e; color: #ffffff; }
+        h1, h2, h3, .font-headline { font-family: 'Space Grotesk', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .tonal-shift { background: linear-gradient(180deg, #131313 0%, #000000 100%); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="selection:bg-primary-dim selection:text-white">
+<!-- TopAppBar -->
+<header class="bg-[#262626]/60 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="text-2xl font-black italic tracking-tighter text-white font-['Space_Grotesk'] uppercase tracking-tight">RANGERS FITNESS</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Space_Grotesk'] uppercase tracking-tight font-black text-[#eb0000] transition-colors duration-300" href="#">HOME</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tight font-black text-white hover:text-[#eb0000] transition-colors duration-300" href="#offers">OFFERS</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tight font-black text-white hover:text-[#eb0000] transition-colors duration-300" href="#services">SERVICES</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tight font-black text-white hover:text-[#eb0000] transition-colors duration-300" href="#contact">CONTACT</a>
+</div>
+<button class="bg-primary-dim text-black px-6 py-2 font-bold tracking-tighter hover:bg-white transition-all scale-95 active:duration-100 uppercase">JOIN NOW</button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Intense high-contrast shot of a dark industrial gym with red neon accents and heavy weightlifting equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmMEO3R7uW30UbkH3fPf1pZJvZpK8ZKtHru6qbLp91pSb8D5aTRIV1opVSGDDNz4z3YTcTppqFAuOsix9Q5NRhvD2XIbTG3jCbiaXtUjDVMO4Q7bIhA1tON16F3IpFTmEwZbCBRmCwX23YP_jf52v65c4cCyszpBASdrDOoISicG5UMvZrNewivj8TWdYxAJvIQfE097TVv-BsAGPgqg7nOIBxrgZLKPZQ832RrgvkpsbYzfluIJG1V7DOeJQxkHD-4I10P_qb9HJN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 container mx-auto px-6 text-center md:text-left">
+<p class="text-primary-dim font-bold tracking-[0.3em] uppercase mb-4 text-sm md:text-base">Elite Performance Center</p>
+<h1 class="text-6xl md:text-9xl font-black italic tracking-tighter mb-6 leading-[0.8] text-white">
+                    RANGERS <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-dim to-primary-container">FITNESS</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-10 font-light tracking-tight">
+                    Build Strength. Transform Your Life. Engineered for those who refuse to settle for average.
+                </p>
+<div class="flex flex-col md:flex-row gap-4">
+<button class="bg-primary-dim text-on-primary-fixed px-12 py-5 text-xl font-black uppercase tracking-tighter hover:bg-white hover:text-black transition-all">
+                        JOIN NOW
+                    </button>
+<button class="border-2 border-white text-white px-12 py-5 text-xl font-black uppercase tracking-tighter hover:bg-white hover:text-black transition-all">
+                        VIEW OFFERS
+                    </button>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div>
+<span class="text-primary-dim font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Our DNA</span>
+<h2 class="text-5xl md:text-6xl font-black uppercase italic mb-8 leading-tight">WE DON'T JUST TRAIN. <br/> WE ENGINEER.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                            Rangers Fitness is a high-performance sanctuary located in the heart of the city. We believe in raw effort, data-driven results, and unyielding discipline. Our facility is equipped with professional-grade gear and staffed by elite coaches ready to push your limits.
+                        </p>
+<div class="grid grid-cols-2 gap-8">
+<div class="bg-surface-container-high p-6 border-l-4 border-primary-dim">
+<span class="text-4xl font-black block text-white">500+</span>
+<span class="text-xs uppercase tracking-widest text-primary-dim font-bold">Elite Members</span>
+</div>
+<div class="bg-surface-container-high p-6 border-l-4 border-primary-dim">
+<span class="text-4xl font-black block text-white">12+</span>
+<span class="text-xs uppercase tracking-widest text-primary-dim font-bold">Pro Coaches</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<img class="w-full aspect-[4/5] object-cover" data-alt="Close up of heavy metal dumbbells in a dark gym setting with sharp red lighting and shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIwEbg8LhheuMFXcMMYcRdVYvTI-MAIYf0wNV8Unh_LJjDCzdZnyCfpDySrOO59UdzD_Yy77-4o3d-Rp55_RBOu6esQbBzk8A7bXoHlGr8OqYzJ8h6gDm3SiZL3XlT0Nrz0Xq0tmg8r_MonJXnh2fy5WXmaUDZYKLESO5tM-pnrxZpkTjhibHb0WN2qccQSuA3IH68DKr8JBDfWWQx5dQkpQJ8PTfn2UUNKh5UXR7-uHENFyCJ-2hwnJL8zhELPX8_cxXL9hb3AVit"/>
+<div class="absolute -bottom-6 -left-6 bg-primary-dim w-24 h-24 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-black" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Offers Section -->
+<section class="py-24 bg-surface" id="offers">
+<div class="container mx-auto px-6 mb-16 text-center">
+<h2 class="text-5xl md:text-7xl font-black uppercase italic mb-4">TACTICAL OFFERS</h2>
+<p class="text-on-surface-variant tracking-[0.1em] font-medium">STRIKE WHILE THE IRON IS HOT</p>
+</div>
+<div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+<!-- Offer 1 -->
+<div class="bg-surface-container-low border border-outline-variant/30 group hover:border-primary-dim transition-all">
+<div class="p-8">
+<div class="flex justify-between items-start mb-6">
+<span class="bg-primary-dim text-black px-3 py-1 text-xs font-black uppercase">LIMITED TIME</span>
+<span class="text-primary-dim font-black text-xl">25% OFF</span>
+</div>
+<h3 class="text-2xl font-black mb-4 uppercase">FOUNDER'S PASS</h3>
+<p class="text-on-surface-variant mb-8 font-light">Full gym access, 2 personal training sessions, and custom meal plan.</p>
+<div class="text-4xl font-black mb-8">$149<span class="text-sm font-light text-on-surface-variant">/mo</span></div>
+<button class="w-full bg-surface-container-highest border border-white text-white py-4 font-black uppercase hover:bg-primary-dim hover:text-black hover:border-primary-dim transition-all">CLAIM NOW</button>
+</div>
+<div class="h-2 w-full bg-primary-dim scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+</div>
+<!-- Offer 2 -->
+<div class="bg-surface-container-highest border-2 border-primary-dim group relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary-dim text-black px-6 py-1 font-black text-sm uppercase -rotate-45 translate-x-6 translate-y-2">MOST POPULAR</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-6">
+<span class="bg-white text-black px-3 py-1 text-xs font-black uppercase">ANNUAL</span>
+<span class="text-primary-dim font-black text-xl">SAVE $400</span>
+</div>
+<h3 class="text-2xl font-black mb-4 uppercase">ELITE RANGER</h3>
+<p class="text-on-surface-variant mb-8 font-light">Unlimited access to all classes, recovery lounge, and priority coaching.</p>
+<div class="text-4xl font-black mb-8">$999<span class="text-sm font-light text-on-surface-variant">/year</span></div>
+<button class="w-full bg-primary-dim text-black py-4 font-black uppercase hover:bg-white transition-all">ENLIST TODAY</button>
+</div>
+</div>
+<!-- Offer 3 -->
+<div class="bg-surface-container-low border border-outline-variant/30 group hover:border-primary-dim transition-all">
+<div class="p-8">
+<div class="flex justify-between items-start mb-6">
+<span class="bg-primary-dim text-black px-3 py-1 text-xs font-black uppercase">STUDENT</span>
+<span class="text-primary-dim font-black text-xl">15% OFF</span>
+</div>
+<h3 class="text-2xl font-black mb-4 uppercase">SQUAD PACK</h3>
+<p class="text-on-surface-variant mb-8 font-light">Valid for 3+ people. Perfect for training partners and squads.</p>
+<div class="text-4xl font-black mb-8">$89<span class="text-sm font-light text-on-surface-variant">/pp</span></div>
+<button class="w-full bg-surface-container-highest border border-white text-white py-4 font-black uppercase hover:bg-primary-dim hover:text-black hover:border-primary-dim transition-all">JOIN SQUAD</button>
+</div>
+<div class="h-2 w-full bg-primary-dim scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-surface-container-low relative" id="services">
+<div class="container mx-auto px-6 grid md:grid-cols-4 gap-4">
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-high p-12 flex flex-col justify-end relative overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700" data-alt="Powerful male athlete performing a heavy deadlift in a cinematic low-light gym atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIjyih6lwuk-16bFBuKxfm9Lk0AkXU80HUMQPm4diLQPL1VuNzcrq8ikKTIKb4r9KF6YWEPTPWY_GL0n4QV9KS7F3bhIZV3R8sRl2j9sdrfdcjW9KwQtwSr1mqtakGrE2eo9iPctjz9KICeEWlg6wn1u0AZswlCO1av1q-gyRqo4v8zEvQQ3mWOhvKponDhy30kAg6CPOSYgEgSgzPwTRUAZX_cVMAKhl7OOtHvuOg0lJxgV6b6uxwYru37ZYxsFFHnLaW8gs91u7I"/>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary-dim text-6xl mb-6" style="font-variation-settings: 'FILL' 1;">weight</span>
+<h3 class="text-4xl font-black uppercase italic mb-4">Weight Training</h3>
+<p class="text-on-surface-variant max-w-sm">Master the art of strength with our comprehensive range of free weights and precision machines.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-8 flex flex-col justify-between hover:bg-primary-dim transition-all group">
+<span class="material-symbols-outlined text-white text-4xl group-hover:text-black">physical_therapy</span>
+<h3 class="text-xl font-black uppercase italic group-hover:text-black mt-12">Personal Training</h3>
+</div>
+<div class="bg-surface-container-highest p-8 flex flex-col justify-between hover:bg-white transition-all group">
+<span class="material-symbols-outlined text-primary-dim text-4xl group-hover:text-primary-dim">directions_run</span>
+<h3 class="text-xl font-black uppercase italic group-hover:text-black mt-12">Cardio Zone</h3>
+</div>
+<div class="bg-surface-container-highest p-8 flex flex-col justify-between hover:bg-white transition-all group">
+<span class="material-symbols-outlined text-primary-dim text-4xl group-hover:text-primary-dim">nutrition</span>
+<h3 class="text-xl font-black uppercase italic group-hover:text-black mt-12">Diet Guidance</h3>
+</div>
+<div class="bg-surface-container-high p-8 flex flex-col justify-between hover:bg-primary-dim transition-all group">
+<span class="material-symbols-outlined text-white text-4xl group-hover:text-black">groups</span>
+<h3 class="text-xl font-black uppercase italic group-hover:text-black mt-12">Group Combat</h3>
+</div>
+</div>
+</section>
+<!-- Gallery Section (Bento Grid) -->
+<section class="py-24 bg-surface">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[250px]">
+<div class="col-span-2 row-span-2 relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Wide shot of a modern brutalist gym interior with red lighting and high-end racks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByJF6PRnuJS5HMyfIAH_vdKYixa4xL-BTwHIxcQ8jFde1RWSknK2K1rfV0VMECgIG8ABGNBCrGnapHlfp4gH4-ynLAW4wI3vLY6j8rLZtDXOwlK37zMFMCifXr3_VyFO-Y0VGP-6wuONYNVaDRfg-_4OOZTwDLonTLE7Y1Tbq9dohFXRYzDqwiqL_qbp8VIvSvYcfHl3gvApoUdWO-LmnzxlGg7Jg9zdkw1gb5HK7N2kQpEDdw4H_p1PDSjMDOHo-K3MXAjvtE7kwL"/>
+</div>
+<div class="relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Close up of gym equipment with dramatic lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzxQbCu78wXg2cU7Nu3N9NRhcqx8DAJP3pxJc8KlfDEMtZHTcdNj-_QuyfvRRlSD1C-GzJTlRkFgsElH6UQ4epMYgoSbUVIR_5oa-w5JtgAMaluCDCKcqAbZHC-lxPwUwz0UuR8D073sniAenJVkQ9bipNgDn63EulllUHe540Nv95QotB_YN0P2W8HgI3DiBkiEiH-l-ufpY4IGsKWWze2llGAHrmHHuKzMMeHbAtOB6s-hsXUTEOMolS5i7FPCzBmA54go1ZRkKR"/>
+</div>
+<div class="relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Athletic woman training in a dark urban gym setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQvB_i6ZlMfzJuXDG9ou0hSTjzMBTwSgkKeiLJs578MDbFcN3OI_ycny9ouGzKym13llIT6_vsIy77HiND7L-jTqIQh5S3LeiYRoU0v8wq9D8MXusrfuGA1RRQHlBHehJw6vh_ngrMUFre0vmN3pIi4EaIPt7I6GXEawaNbCikNEbdIOi6yjs5Wg1nZaF7hJJ45J07NYa4ES8-Kloylf4Grm_QBmdOcbDgA-56ZjRiMhgKy-wSO6hNYNcLBIaBYzyoId0sog5XXs5f"/>
+</div>
+<div class="col-span-2 relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Athlete preparing for a workout with focused expression and high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtQ8GaRNFzcE45iAZLqvvq7DxK5lBnPmAnX2-m9UOQ8LqnI1JDun8ZU741dbMjULEgS7RYLQJVDG8BZbvZra5CLnMn83iitTxxG9V5E7e7FDW54ovoylLvKnxvMsy2wbSOxq30kdcZoQM99dgT3u9PHr7N933iTxXftgsnfmd_G3UEfhCMZA2JF2Lx0rDB0xb-NbTHRoJvZZXtCIT7YmGJy17n-zlbEAPSMj4xx68dtnV-5aRLnWPC0fGi9s57rgyuDzbgf7AfuMPc"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl md:text-5xl font-black uppercase italic mb-16 border-l-8 border-primary-dim pl-6">THE RANGER VOICES</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-surface-container-high p-8 flex flex-col">
+<div class="flex text-primary-dim mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-white italic text-lg mb-8">"The atmosphere here is electric. There's no ego, just people pushing their absolute limits. Best gym in the city, hands down."</p>
+<div class="mt-auto">
+<span class="block font-black uppercase tracking-tighter text-white">MARCUS REED</span>
+<span class="text-xs text-primary-dim font-bold uppercase tracking-widest">Powerlifter</span>
+</div>
+</div>
+<div class="bg-surface-container-high p-8 flex flex-col border-t-4 border-primary-dim">
+<div class="flex text-primary-dim mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-white italic text-lg mb-8">"Personal training here transformed my perspective on fitness. It's not about looking good; it's about being capable."</p>
+<div class="mt-auto">
+<span class="block font-black uppercase tracking-tighter text-white">SARAH CHEN</span>
+<span class="text-xs text-primary-dim font-bold uppercase tracking-widest">Crossfit Athlete</span>
+</div>
+</div>
+<div class="bg-surface-container-high p-8 flex flex-col">
+<div class="flex text-primary-dim mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-white italic text-lg mb-8">"Rangers Fitness feels like a high-end vault. Everything is clean, sharp, and designed for results. Worth every penny."</p>
+<div class="mt-auto">
+<span class="block font-black uppercase tracking-tighter text-white">DAVID VANCE</span>
+<span class="text-xs text-primary-dim font-bold uppercase tracking-widest">Executive Member</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-surface-container-lowest" id="contact">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-16">
+<div>
+<h2 class="text-5xl md:text-7xl font-black uppercase italic mb-8">GET IN THE <span class="text-primary-dim">RING</span></h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary-dim text-3xl">location_on</span>
+<div>
+<h4 class="font-black uppercase text-white mb-2">BASE CAMP</h4>
+<p class="text-on-surface-variant">420 Industrial Way, Iron District<br/>Steel City, SC 90210</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary-dim text-3xl">call</span>
+<div>
+<h4 class="font-black uppercase text-white mb-2">COMMS LINE</h4>
+<p class="text-on-surface-variant">+1 (555) RANGERS-01</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary-dim text-3xl">mail</span>
+<div>
+<h4 class="font-black uppercase text-white mb-2">DIRECT ACCESS</h4>
+<p class="text-on-surface-variant">recruit@rangersfitness.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-10 border border-outline-variant/20">
+<form class="space-y-6">
+<div>
+<label class="block text-xs font-black uppercase tracking-widest text-on-surface-variant mb-2">Operator Name</label>
+<input class="w-full bg-surface-container-highest border-b-2 border-outline focus:border-primary-dim outline-none p-4 text-white placeholder-on-surface-variant/30" placeholder="ENTER NAME" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-black uppercase tracking-widest text-on-surface-variant mb-2">Comms Address</label>
+<input class="w-full bg-surface-container-highest border-b-2 border-outline focus:border-primary-dim outline-none p-4 text-white placeholder-on-surface-variant/30" placeholder="ENTER EMAIL" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-black uppercase tracking-widest text-on-surface-variant mb-2">Mission Intelligence</label>
+<textarea class="w-full bg-surface-container-highest border-b-2 border-outline focus:border-primary-dim outline-none p-4 text-white placeholder-on-surface-variant/30" placeholder="HOW CAN WE ASSIST YOUR TRAINING?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-dim text-black py-5 font-black uppercase tracking-widest hover:bg-white transition-all">SEND TRANSMISSION</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#000000] flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full gap-8 border-t-0 font-['Inter'] uppercase text-[12px] tracking-[0.2em] font-bold">
+<div class="text-white font-black">
+<span class="text-xl italic tracking-tighter">RANGERS FITNESS</span>
+</div>
+<div class="flex gap-8">
+<a class="text-[#ababab] hover:text-white underline decoration-[#eb0000] decoration-2 transition-all" href="#">PROGRAMS</a>
+<a class="text-[#ababab] hover:text-white underline decoration-[#eb0000] decoration-2 transition-all" href="#">COACHES</a>
+<a class="text-[#ababab] hover:text-white underline decoration-[#eb0000] decoration-2 transition-all" href="#">MEMBERSHIP</a>
+<a class="text-[#ababab] hover:text-white underline decoration-[#eb0000] decoration-2 transition-all" href="#">PRIVACY</a>
+</div>
+<div class="text-[#ababab]">
+            © 2024 RANGERS FITNESS. ENGINEERED FOR PERFORMANCE.
+        </div>
+</footer>
+<!-- WhatsApp Sticky -->
+<a class="fixed bottom-8 right-8 bg-[#25D366] text-white w-16 h-16 flex items-center justify-center rounded-none shadow-2xl hover:scale-110 active:scale-95 transition-all z-[100]" href="#">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+</svg>
+</a>
+</body></html>
