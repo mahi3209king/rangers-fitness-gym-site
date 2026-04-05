@@ -453,7 +453,7 @@ h1, h2, h3, h4, h5, h6, .font-headline {
 
 .whatsapp-float:hover { transform: scale(1.1); }
 .whatsapp-float:active { transform: scale(0.95); }
-.whatsapp-float svg { width: 2rem; height: 2rem; fill: currentColor; }
+.whatsapp-float svg { width: 1.6rem; height: 1.6rem; fill: currentColor; }
 
 /* Loader */
 .loader-container {
