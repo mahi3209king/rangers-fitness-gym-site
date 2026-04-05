@@ -533,12 +533,14 @@ h1, h2, h3, h4, h5, h6, .font-headline {
 }
 
 .service-card:hover .material-symbols-outlined,
-.service-card:hover h3 {
+.service-card:hover h3,
+.service-card:hover .service-desc {
   color: var(--on-primary) !important;
 }
 
 .service-card.invert-hover:hover .material-symbols-outlined,
-.service-card.invert-hover:hover h3 {
+.service-card.invert-hover:hover h3,
+.service-card.invert-hover:hover .service-desc {
   color: var(--primary-dim) !important;
 }
 
@@ -556,6 +558,15 @@ h1, h2, h3, h4, h5, h6, .font-headline {
   font-weight: 900;
   text-transform: uppercase;
   margin-top: 3rem;
+  transition: color 0.3s ease;
+}
+
+.service-desc {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
   transition: color 0.3s ease;
 }
 

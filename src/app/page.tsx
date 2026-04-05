@@ -207,21 +207,25 @@ function Services() {
         <div className="service-card">
           <span className="material-symbols-outlined service-icon">physical_therapy</span>
           <h3 className="service-title">Personal Training</h3>
+          <p className="service-desc">Get personalized coaching tailored to your goals with one-on-one guidance from certified trainers.</p>
         </div>
 
         <div className="service-card invert-hover">
           <span className="material-symbols-outlined service-icon primary">directions_run</span>
           <h3 className="service-title">Cardio Zone</h3>
+          <p className="service-desc">Build endurance and heart strength with state-of-the-art cardiovascular equipment and training programs.</p>
         </div>
 
         <div className="service-card invert-hover">
           <span className="material-symbols-outlined service-icon primary">nutrition</span>
           <h3 className="service-title">Diet Guidance</h3>
+          <p className="service-desc">Achieve your fitness goals faster with expert nutritional plans customized to your lifestyle and needs.</p>
         </div>
 
         <div className="service-card">
           <span className="material-symbols-outlined service-icon">groups</span>
           <h3 className="service-title">Group Combat</h3>
+          <p className="service-desc">Unleash your energy in high-intensity group sessions that combine fun, community, and powerful results.</p>
         </div>
       </div>
     </section>
