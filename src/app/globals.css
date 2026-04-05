@@ -455,6 +455,19 @@ h1, h2, h3, h4, h5, h6, .font-headline {
 .whatsapp-float:active { transform: scale(0.95); }
 .whatsapp-float svg { width: 1.6rem; height: 1.6rem; fill: currentColor; }
 
+@media (max-width: 767px) {
+  .whatsapp-float {
+    width: 3rem;
+    height: 3rem;
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+  .whatsapp-float svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
 /* Loader */
 .loader-container {
   display: flex;
