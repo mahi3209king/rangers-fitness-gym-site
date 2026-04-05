@@ -695,13 +695,26 @@ h1, h2, h3, h4, h5, h6, .font-headline {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  min-width: min(100%, 320px);
-  flex: 0 0 min(100%, 320px);
+  min-width: 100%;
+  flex: 0 0 100%;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .testimonial-card {
     min-width: calc((100% - 4rem) / 3);
     flex: 0 0 calc((100% - 4rem) / 3);
+  }
+}
+@media (max-width: 767px) {
+  .testimonials-grid {
+    gap: 0;
+  }
+  .testimonial-card {
+    min-width: 100%;
+    flex: 0 0 100%;
+  }
+  .testimonials-wrapper {
+    padding: 0 1rem;
   }
 }
 .testimonial-card.featured {
